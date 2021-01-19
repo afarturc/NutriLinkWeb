@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/cb7860af43.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Oswald&display=swap" rel="stylesheet">
+  <title>NutriLink</title>
+  <style>
+    body{
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-target=".entrada"> 
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top entrada">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><span style="color: red;">Nutri</span>Link</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#negocios" tabindex="-1" aria-disabled="true">Negócio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#app" tabindex="-1" aria-disabled="true">App</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#equipa" tabindex="-1" aria-disabled="true">Equipa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#documentacao" tabindex="-1" aria-disabled="true">Documentação</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Banner Home-->
+  <img src="wallpaper.jpg" alt="wallpaper" class="img-fluid" id="home">
+
+  <div class="container position-absolute bottom-50">
+    <div class="row">
+      <h1 class="fs-1"><span style="color: red;" class="display-1">Nutri</span>Link</h1>
+    </div>
+    <div class="row">
+      <p class="lead fs-1">A sua saúde à distância de um click</p>
+    </div>
+    <div class="row">
+      <p class="lead fs-3">Com a NutriLink consegue obter refeições saudáveis de uma forma rápida e cómoda</p>
+    </div>
+  </div>
+  <!--End Home-->
+
+  <div class="row mt-5" id="servicos"></div>
+  <div class="row mt-5"></div>
+  <div class="row mt-5"></div>
+
+
+  <!--Serviços-->
+  <div class="container">
+    <div class="d-flex justify-content-center">
+      <h1 class="fs-1">Serviços que temos para lhe oferecer:</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+      <p class="lead fs-3">Temos como objetivo ajudá-lo a ter uma alimentação mais saudável mais facilmente.</p>
+    </div>
+
+    <div class="row row-cols-3 row-cols-md-3 g-2 justify-content-center mt-3">
+      <div class="col">
+        <div class="card h-100 w-75">
+          <img src="seleção.jpg" class="card-img-top h-50" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Seleção</h5>
+            <p class="card-text">O nosso sistema de selação ajuda-te a encomendar uma refeição correspondente à época do ano</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 w-75">
+          <img src="conforto.png" class="card-img-top h-50" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Oferta</h5>
+            <p class="card-text">Graças ao layout simples e acessível encomendar refeições nunca foi tão fácil</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 w-75">
+          <img src="oferta.jpg" class="card-img-top h-50" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Conforto</h5>
+            <p class="card-text">Sistema de pagamento via MBway ou cartão de crédito para máxima eficácia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Serviços-->
+
+  <div class="row mt-5" id="negocios"></div>
+  <div class="row mt-5"></div>
+  <div class="row mt-5"></div>
+
+
+  <!--Negócio-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="negócio.png" alt="" class="rounded-circle" style="height: 275px;">
+      </div>
+      <div class="col-md-8">
+        <h3 class="h3 fs-1">Negócio</h3>
+        <p class=" lead fs-3">As grandes diferenças entre a nossa plataforma e as plataformas do mesmo tipo são o facto de apenas ser aceite parceria com restaurantes que preparem refeições com produtos biológicos e sazonais e facto de o cliente poder saber todos os detalhes de consumo da sua refeição</p>
+      </div>
+    </div>
+  </div>
+  <!--End Negócio-->
+
+  <div class="row mt-5" id="app"></div>
+  <div class="row mt-5"></div>
+  <div class="row mt-5"></div>
+
+
+  <!--App-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="h3 fs-1">App</h3>
+        <p class=" lead fs-3">Trabalha de forma igual ao website. Ou seja, se for cliente, poderá ver e encomendar os produtos; se for um negócio, poderá ver e editar o cardápio referente a si</p>
+      </div>
+      <div class="col-md-4">
+        <img src="tel.PNG" alt="" class="rounded h-100">
+      </div>
+    </div>
+  </div>
+
+  <!--End App-->
+  <div class="row mt-5" id="equipa"></div>
+  <div class="row mt-5"></div>
+  <div class="row mt-5"></div>
+  <div class="row mt-5"></div>
+
+
+  <!--Team-->
+  <div class="container-fluid text-center">
+    <div class="row mb-5">
+      <h1 class="h3 fs-1">Equipa</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="col-md-2">
+        <img src="Artur.jpg" alt="" class="rounded-circle mb-3 shadow-sm" style="height: 125px;">
+        <h4>Artur Correia</h4>
+        <p>art.afo@ua.pt</p>
+      </div>
+      <div class="col-md-2">
+        <img src="Inês.PNG" alt="" class="rounded-circle mb-3 shadow-sm" style="height: 125px;">
+        <h4>Inês Ferreira</h4>
+        <p>inesferreira02@ua.pt</p>
+      </div>
+      <div class="col-md-2">
+        <img src="Vânia.PNG" alt="" class="rounded-circle mb-3 shadow-sm" style="height: 125px;">
+        <h4>Vânia Morais</h4>
+        <p>vania.morais@ua.pt</p>
+      </div>
+      <div class="col-md-2">
+        <img src="Afonso.PNG" alt="" class="rounded-circle mb-3 shadow-sm" style="height: 125px;">
+        <h4>Afonso Silva</h4>
+        <p>afonsosilva6@ua.pt</p>
+      </div>
+      <div class="col-md-2">
+        <img src="Maja.PNG" alt="" class="rounded-circle mb-3 shadow-sm" style="height: 125px;">
+        <h4>Maja Kałuzińska</h4>
+        <p>maja.kaluzinska@ua.pt</p>
+      </div>
+    </div>
+  </div>
+  <!--End Team-->
+
+  <div class="row mt-5"></div>
+  <div class="row mt-5"></div>
+  <div class="row mt-5"></div>
+
+  <!--Footer-->
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <span class="navbar-text">
+        Modelação e Análise de Sistemas - G401  
+      </span>
+      <span>
+        <a href="https://www.ua.pt/" class="nav-link active">Universidade de Aveiro</a>
+      </span>
+    </div>
+  </nav>
+  <!--End Footer-->
+
+  <!--Documentação-->
+  <div class="modal fade" tabindex="-1" id="documentacao">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Documentação</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Iteração 1</a>
+              <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Iteração 2</a>
+              <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Iteração 3</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              </i><a href="https://1drv.ms/w/s!ArcfFSSCK-yHnQqRRlY4RsF9g8_7?e=Jm7Q0k"><i class="far fa-file-word" style="font-size: 5rem; margin: 5px; margin-top: 20px;"></i></a>
+              <h5>E2-Relatorio Visao</h5>
+              <p>Explicita qual a proposta de valor e a quem esta se dirige</p>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</body>
+</html>
