@@ -16,10 +16,13 @@
 
         <!-- Sidebar -->
         <div class="bg-light border-right" id="sidebar-wrapper" style="text-align: center;">
-          <div class="sidebar-heading"><img src="..\Prototipo\logo.PNG" alt="" style="border: solid grey;height: 75px;width: 75px;"></div>
-          <div class="list-group list-group-flush mt-5" style="font-size: 35px;">
+          <div class="sidebar-heading">
+            <img src="logo.PNG" alt="" style="border: solid grey;height: 75px;width: 75px;">
+            <p class="mt-2">VEGI</p>
+          </div>
+          <div class="list-group list-group-flush mt-2" style="font-size: 30px;">
             <a href="#" class="list-group-item list-group-item-action bg-light mt-5"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light mt-5"><i class="fas fa-utensils"></i> Menu</a>
+            <a href="MenuBus.html" class="list-group-item list-group-item-action bg-light mt-5"><i class="fas fa-utensils"></i> Menu</a>
             <a href="#" class="list-group-item list-group-item-action bg-light mt-5"><i class="fa fa-credit-card" aria-hidden="true"></i> Payments</a>
             <a href="index.html" class="list-group-item list-group-item-action bg-light mt-5"><i class="fa fa-power-off fa-lg" aria-hidden="true"></i></a>
           </div>
@@ -28,14 +31,21 @@
     
         <!-- Page Content -->
         <div id="page-content-wrapper">
-    
-          <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-            <button class="btn btn-secondary" id="menu-toggle">Toggle Menu</button>
-    
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </nav>
+          <div class="container mt-5">
+            <div class="d-flex flex-row align-items-center" style="background-color: Gainsboro;">
+                <div class="d-flex flex-column me-5">
+                    <i class="fa fa-user" aria-hidden="true" style="font-size: 10rem"></i><br>
+                </div>
+                <div class="d-flex flex-column">
+                    <div class="p-2"><span class="att">User: </span><span class="text">Filomena</span></div>
+                    <div class="p-2"><span class="att">Email: </span><span class="text">business@mas.pt</span></div>
+                    <div class="p-2"><span class="att">Contact Info: </span><span class="text">236458792</span></div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;" class="container mt-5 mb-3">
+          <h1>Statistics</h1>
+        </div>
             <div class="d-flex flex-row mb-5">
                     <div class="chart-container me-5" style="height:20vh; width:40vw">
                         <canvas id="myChart"></canvas>
@@ -97,7 +107,7 @@
         
             // The data for our dataset
             data: {
-                        labels: ["Menu 1", "Menu 2", "Menu 3"],
+                        labels: ["Dish 1", "Dish 2", "Dish 3"],
                         datasets: [{
                             label: ['Actors', 'Categories', 'Countries', 'Directors', 'Titles'],
                             backgroundColor: ['Brown', 'SlateGrey', 'DarkSlateBlue'],

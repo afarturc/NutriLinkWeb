@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300;1,600&display=swap" rel="stylesheet">
+    <link href="simple-sidebar.css" rel="stylesheet">
+    <style>
+        body{
+          font-family: 'Montserrat', sans-serif;
+        }
+        .text{
+          font-weight: 300;
+          font-style: italic;
+        }
+        .att{
+          font-weight: 500;
+        }
+        .ratings i {
+          font-size: 16px;
+          color: SkyBlue
+        }
+  
+        .strike-text {
+          color: SkyBlue;
+          text-decoration: line-through
+        }
+      
+        .product-image {
+          width: 100%
+        }
+      
+        .dot {
+          height: 7px;
+          width: 7px;
+          margin-left: 6px;
+          margin-right: 6px;
+          margin-top: 3px;
+          background-color: grey;
+          border-radius: 50%;
+          display: inline-block
+        }
+      
+        .spec-1 {
+            color: #938787;
+            font-size: 15px
+        }
+  
+        h5 {
+            font-weight: 400
+        }
+  
+        .para {
+            font-size: 16px
+        }
+        .att{
+          font-weight: 500;
+        }
+        .text{
+          font-weight: 300;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper" style="text-align: center;">
+            <div class="sidebar-heading">
+              <img src="logo.PNG" alt="" style="border: solid grey;height: 75px;width: 75px;">
+              <p class="mt-2">VEGI</p>
+            </div>
+            <div class="list-group list-group-flush mt-2" style="font-size: 30px;">
+              <a href="Business.html" class="list-group-item list-group-item-action bg-light mt-5"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+              <a href="MenuBus.html" class="list-group-item list-group-item-action bg-light mt-5"><i class="fas fa-utensils"></i> Menu</a>
+              <a href="#" class="list-group-item list-group-item-action bg-light mt-5"><i class="fa fa-credit-card" aria-hidden="true"></i> Payments</a>
+              <a href="index.html" class="list-group-item list-group-item-action bg-light mt-5"><i class="fa fa-power-off fa-lg" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        <!-- /#sidebar-wrapper -->
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="d-flex flex-row mt-3" style="justify-content: center;">
+                <div class="d-flex justify-content-center row" style="width: 50rem;">
+                  <div style="text-align: center;">
+                    <h1>Your Menu</h1>
+                  </div>
+                  <div class="col-md-10">
+                          <div class="row p-2 bg-white border rounded" id="item1">
+                              <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" style="height: 150px;width: 150px;" src="https://wendypolisi.com/wp-content/uploads/2016/06/veggie-lasagna.jpg"></div>
+                              <div class="col-md-6 mt-1">
+                                  <h5>Vegeratian Lasagna</h5>
+                                  <div class="mt-3">
+                                    <p class="text-justify text-truncate para mb-0">Spinach and zucchini combined with fresh gluten free lasagna noodles<br><br></p>
+                                  </div>
+          
+                              </div>
+                              <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                                  <div class="d-flex flex-row align-items-center">
+                                      <h4 class="mr-1">10,50€</h4>
+                                  </div>
+                                  <div class="d-flex flex-column mt-4">
+                                    <button class="btn btn-secondary btn-sm" type="button">Details</button>
+                                    <button class="btn btn-outline-secondary btn-sm mt-2" type="button" id="rem1">Remove</button></div>
+                              </div>
+                          </div>
+                          <div class="row p-2 bg-white border rounded mt-2" id="item2">
+                              <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="Mação.PNG"></div>
+                              <div class="col-md-6 mt-1">
+                                  <h5>Item 2</h5>
+                                  <div class="mt-3">
+                                    <p class="text-justify text-truncate para mb-0"><br>Maça, Frutos Vermelhos e Limão<br></p>
+                                  </div>
+                              </div>
+                              <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                                  <div class="d-flex flex-row align-items-center">
+                                      <h4 class="mr-1">3,00€</h4>
+                                  </div>
+                                  <div class="d-flex flex-column mt-4">
+                                    <button class="btn btn-secondary btn-sm" type="button">Details</button>
+                                    <button class="btn btn-outline-secondary btn-sm mt-2" type="button" id="rem2">Remove</button></div>
+                              </div>
+                          </div>
+                          <div class="row p-2 bg-white border rounded mt-2" id="item3">
+                              <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="sopa.PNG"></div>
+                              <div class="col-md-6 mt-1">
+                                  <h5>Item 3</h5>
+                                  <div class="mt-3">
+                                    <p class="text-justify text-truncate para mb-0"><br>"A nossa Sopa de Bacalhau", "Ostras, Manga, Lima e Amêndoa", "Bacalhau e Salicórnia", "Nispo de Marinhoa" e "Viagem pela Doçaria Tradicional Portuguesa"<br></p>
+                                  </div>
+                              </div>
+                              <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                                  <div class="d-flex flex-row align-items-center">
+                                      <h4 class="mr-1">6,00€</h4>
+                                  </div>
+                                  <div class="d-flex flex-column mt-4">
+                                    <button class="btn btn-secondary btn-sm" type="button">Details</button>
+                                    <button class="btn btn-outline-secondary btn-sm mt-2" type="button" id="rem3">Remove</button></div>
+                              </div>
+                          </div>
+                          <div class="row p-2 bg-white border rounded mt-2">
+                            <div class="col-md-3 mt-1">
+                              <button style="font-size: 50px;" class="btn" id="add">
+                                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+        </div>
+        <!-- /#page-content-wrapper -->
+    
+      </div>
+      <!-- /#wrapper -->
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js" integrity="sha512-SuxO9djzjML6b9w9/I07IWnLnQhgyYVSpHZx0JV97kGBfTIsUYlWflyuW4ypnvhBrslz1yJ3R+S14fdCWmSmSA==" crossorigin="anonymous"></script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('#rem1').click(function(){
+          $('#item1').addClass('d-none')
+        })
+        $('#rem2').click(function(){
+          $('#item2').addClass('d-none')
+        })
+        $('#rem3').click(function(){
+          $('#item3').addClass('d-none')
+        })
+      })
+    </script>
+</body>
+</html>
